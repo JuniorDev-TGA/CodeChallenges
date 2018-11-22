@@ -25,29 +25,29 @@ Awesome! You won't mind contributing then :) See the steps below on contributing
 
 Obviously, you need a Github account... Then follow:
 
-1. Click the FORK button in the top right. This essentially copies this entire repo in it's current state to your account, so you can make changes and additions privately without affecting the original. You'll now be in your copy of the repo.
-2. Click the green Clone or Download button and copy that link. We're going to use the command line to save this onto your computer :)
-3. Open your chosen command line application of choice! Use the 'cd' command to navigate to the chosen directory of your choice (i.e. a folder in your Documents for all the challenges you're going to solve). << another method of cloning locally? >>
-4. Clone the repo here using 'git clone ' and copy and paste the link.
-5. All set! You have the repo on your machine locally to work on. Now, you want to create a branch to work on instead of Master. In the command line, type git checkout -b [your name] - this will create the branch and put you on it. Then find the folder with the challenge you want to solve and in the Solutions folder, create your solutions file.
+1. Click the **FORK** button in the top right. This essentially copies this entire repo in it's current state to your account, so you can make changes and additions privately without affecting the original. You'll now be in your copy of the repo.
+2. Click the green **Clone or Download** button and copy that link. We're going to use the command line to save this onto your computer :)
+3. Open your chosen command line application of choice! Use the `cd` command to navigate to the chosen directory of your choice (i.e. a folder in your Documents for all the challenges you're going to solve).
+4. Clone the repo here using `git clone ` and paste the link you copied.
+5. All set! You have the repo on your machine locally to work on. Now, you want to create a branch to work on instead of Master. In the command line, type `git checkout -b [your name]` - this will create the branch and put you on it. Then find the folder with the challenge you want to solve and in the Solutions folder, create your solutions file.
 
-### It's not my first rodeo
+### It ain't my first rodeo
 
 If you have the repo locally and the challenge you want is there, then just follow step 5 from above and solve away! However, if it's a new challenge, you'll have to do a pull to get it...
 
-1. In your command line application of choice, navigate to the repo folder (i.e. cd documents/juniordev/challenges)
-2. Use the git pull origin master command - this is pulling all the changes from the master repo (the JuniorDevTGA one) to your local one.
+1. In your command line application of choice, navigate to the repo folder (i.e. `cd documents/juniordev/challenges`)
+2. Use the `git pull origin master` command - this is pulling all the changes from the master repo (the JuniorDevTGA one) to your local one.
 3. Follow step 5 from above, making sure you're on your own branch.
 
-### Let's submit
+### Ready to submit
 
 You're done and dusted and ready to submit your solution! Now you need to push it and make the request to pull it into the master repo...
 
-1. In the command line, do a git add . to stage your files. Any files changed or added will be included here.
-2. Use git commit -m "[your message]" to commit the staged files. It's good practice to write a message, even if it is just that you tried!
-3. Now's the time to push your changes from your local (your computer) to your remote (github). Use git push for this.
+1. In the command line, do a `git add .` to stage your files. Any files changed or added will be included here. (you can also use `git status` to see the files you've changed and will be committing)
+2. Use `git commit -m "[your message]"` to commit the staged files. It's good practice to write a message, even if it is just that you tried!
+3. Now's the time to push your changes from your local (your computer) to your remote (github). Use `git push` for this.
 4. Yay! Done! Now you need to make the pull request so we can add your solution; go to the repo on *your* github page.
-5. Click the NEW PULL REQUEST button. This is going to take you to a page to show all your changes and confirm your want to pull your changes from your branch to the master branch of the master (JuniorDevTGA) repo. Click through the green buttons to confirm this.
+5. Click the **NEW PULL REQUEST** button. This is going to take you to a page to show all your changes and confirm your want to pull your changes from *your branch to the master branch* of the master (JuniorDevTGA) repo. Click through the green buttons to confirm this.
 6. All done! Now onto the next challenge..
 
 ## Contributing
@@ -58,4 +58,6 @@ To contribute, just copy the steps from above to make sure you have the latest v
 
 ## Resources
 
-Where are we getting the challenges from?
+Give credit here if you've copied the challenges from somewhere else.
+
+Feel free to edit this readme if you find any mistakes!
