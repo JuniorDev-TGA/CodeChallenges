@@ -11,62 +11,62 @@
 */
 
 let isPasswordValid = function(password: string): Boolean {
-    if (password.length >= 8 && password.length <= 20) {
-        
-        //Checking for capital letter
-        var oneCapital = false;
-        for (var i = 0; i < password.length; i++) {
-            var letter = password[i];
-            if (letter.toUpperCase() == letter) {
-                oneCapital = true;
-                break;
-            }
-        }
+  if (password.length >= 8 && password.length <= 20) {
+      
+      //Checking for capital letter
+      var oneCapital = false;
+      for (var i = 0; i < password.length; i++) {
+          var letter = password[i];
+          if (letter.toUpperCase() == letter) {
+              oneCapital = true;
+              break;
+          }
+      }
 
-        if (oneCapital == false) {
-            return false;
-        }
+      if (oneCapital == false) {
+          return false;
+      }
 
-        //Checking for numbers
-        var oneNumber = false;
-        for (var i = 0; i < password.length; i++) {
-            var letter = password[i];
-            if (typeof letter == "string") {
-                oneNumber = true;
-                break;
-            }
-        }
+      //Checking for numbers
+      var oneNumber = false;
+      for (var i = 0; i < password.length; i++) {
+          var letter = password[i];
+          if (typeof letter == "string") {
+              oneNumber = true;
+              break;
+          }
+      }
 
-        if (oneNumber == false) {
-            return false;
-        }
+      if (oneNumber == false) {
+          return false;
+      }
 
-        //
-        var oneSpecialCharacter = false;
-        var specialCharacters = "!@#$%^&*";
-        for (var i = 0; i < password.length; i++) {
-            var letter = password[i];
-            for (var j = 0; j < specialCharacters.length; j++) {
-                var specialCharacter = specialCharacters[j];
-                if (letter == specialCharacter) {
-                    oneSpecialCharacter = true;
-                    break;
-                }
-            }
+      //
+      var oneSpecialCharacter = false;
+      var specialCharacters = "!@#$%^&*";
+      for (var i = 0; i < password.length; i++) {
+          var letter = password[i];
+          for (var j = 0; j < specialCharacters.length; j++) {
+              var specialCharacter = specialCharacters[j];
+              if (letter == specialCharacter) {
+                  oneSpecialCharacter = true;
+                  break;
+              }
+          }
 
-            if (oneSpecialCharacter == true) {
-                break;
-            }
-        }
+          if (oneSpecialCharacter == true) {
+              break;
+          }
+      }
 
-        if (oneSpecialCharacter == false) {
-            return false;
-        }
+      if (oneSpecialCharacter == false) {
+          return false;
+      }
 
-        return true;
-    }
+      return true;
+  }
 
-    return false;
+  return false;
 }
 
 /*
