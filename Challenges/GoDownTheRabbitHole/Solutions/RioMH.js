@@ -1,18 +1,13 @@
 let parentsCache = [];
 
 function countParents(parentId, data) {
-    let cached = parentsCache[parentId];
     let count = 1;
-
-    if (cached) {
-        count = cached;
-    } else {
-        for (let index = 1; index < data.length; index++) {
-            let item = data[index]
-            if (item.itemId == parentId && item.parentId != null) {
-                count += countParents(item.parentId, data);
-                break;
-            }
+    
+    for (let index = 1; index < data.length; index++) {
+        let item = data[index]
+        if (item.itemId == parentId && item.parentId != null) {
+            count += countParents(item.parentId, data);
+            break;
         }
     }
 
@@ -24,13 +19,8 @@ function getIndent(item, data) {
     let indent = "";
 
     if (item.parentId != 0) {
-        let repeatCount = countParents(item.parentId, data);
-
-        if (repeatCount > 0) {
-            repeatCount = repeatCount - 1;
-        }
-
-        indent = ("   ").repeat(repeatCount);
+        let repeatCount = parentsCache[item.parentId] || countParents(item.parentId, data);
+        indent = ("   ").repeat(repeatCount - 1);
     }
 
     return indent;
