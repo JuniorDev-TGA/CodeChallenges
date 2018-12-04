@@ -1,6 +1,10 @@
 let parentsCache = [];
 
 function countParents(parentId, data) {
+    if (parentsCache[parentId]) {
+        return parentsCache[parentId]
+    }
+    
     let count = 1;
     
     for (let index = 1; index < data.length; index++) {
@@ -19,7 +23,7 @@ function getIndent(item, data) {
     let indent = "";
 
     if (item.parentId != 0) {
-        let repeatCount = parentsCache[item.parentId] || countParents(item.parentId, data);
+        let repeatCount = countParents(item.parentId, data);
         indent = ("   ").repeat(repeatCount - 1);
     }
 
