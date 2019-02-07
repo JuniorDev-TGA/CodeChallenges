@@ -52,12 +52,14 @@ You're done and dusted and ready to submit your solution! Now you need to push i
 
 ## Contributing
 
-You want to submit a challenge? These can be a written problem, practicing a design pattern, badly written code that needs to be refactored, or just code infested with bugs - if you're taking the challenge from somewhere else on the web, just make sure you're creditting the source :)
+You want to submit a challenge? These can be a written problem, practicing a design pattern, badly written code that needs to be refactored, or just code infested with bugs - if you're taking the challenge from somewhere else on the web, just make sure you're crediting the source :)
 
 To contribute, just copy the steps from above to make sure you have the latest version of the repo on your local so you can add your stuff and then follow the submitting steps to send it through. Follow the format that's already there with challenges each having their own folder within the challenges folder, and a folder for solutions. You can submit challenges in any language you want or you can keep it generic by just having the challenge written in sudo code in a readme.md file - but try to add as much information as possible; we don't want handholding but we want to learn something on what we need to do and what we're going to be learning. Feel free to even add in links to resources for people to learn more if they want if it's a design pattern or basic fundamental.
 
 ## Resources
 
 Give credit here if you've copied the challenges from somewhere else.
+
+Coderbyte.com
 
 Feel free to edit this readme if you find any mistakes!
